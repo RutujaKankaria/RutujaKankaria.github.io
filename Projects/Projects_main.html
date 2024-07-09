@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">      
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 17.5cm;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  height: 17cm;
+  width: 100%;
+  position: relative;
+	border: 1px solid blue;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+.image-class {
+  height: 200px;
+  width: 100%;
+}
+
+.view-btn {
+  margin:auto;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  background-color: #666;
+  color: white; 
+  bottom: 5px;
+  position: absolute;
+  left: 30%;
+}
+
+</style>
+</head>
+<body>
+<title>Project Portfolio</title>
+
+<!-- MAIN (Center website) -->
+<div class="main" >
+
+<h1>Rutuja Kankaria</h1>
+<hr>
+
+<h2>Project Portfolio</h2>
+
+<div id="myBtnContainer">
+
+  <button class="btn" onclick="filterSelection('collegework')"> College work</button>
+  <button class="btn" onclick="filterSelection('machinelearning')"> Individual work </button>
+  <button class="btn active" onclick="filterSelection('deeplearning')"> Office work</button>
+  <button class="btn" onclick="filterSelection('all')"> Show all</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column collegework">
+    <div class="content">
+      <img src="./images/Co-working Space.jpg" alt="Mountains" class="image-class">
+      <h4>Co-working Space Design</h4>
+      <p class="card-text" align="justify">As the name says Co working – working together, working together as equals. Coworking is a term used to describe a working arrangement in which people from different teams and companies come together to work in a single shared space.
+
+
+</p>
+      <br>                  
+      <b>Skills and Tools</b>
+      <p> Site Analysis to Walkthrough </p>
+      <a href="./Co-working Space.pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>     
+      </a>           
+    </div>
+  </div>
+ 
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column collegework">
+    <div class="content">
+      <img src="./images/Restaurant Design.jpg" alt="Mountains" class="image-class">
+      <h4>Restaurant Design</h4>
+      <p class="card-text" align="justify">A place where people pay to sit, enjoy and eat meals that are cooked and 
+served on the premises.
+
+
+</p>
+      <br>                  
+      <b>Skills and Tools</b>
+      <p> Site analysis to Elevations </p>
+      <a href="./Restaurant Design.pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>     
+      </a>           
+    </div>
+  </div>
+ 
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column collegework">
+    <div class="content">
+      <img src="./images/18.jpg" alt="Mountains" class="image-class">
+      <h4>Renders</h4>
+      <p class="card-text" align="justify">3D Model created in Sketchup and rendered in V-ray 
+
+
+</p>
+      <br>                  
+      <b>Skills and Tools</b>
+      <p> Sketchup and V-ray </p>
+      <a href="./College Renders.pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>     
+      </a>           
+    </div>
+  </div>
+  
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column collegework">
+    <div class="content">
+      <img src="./images/landscape-design-1.jpg" alt="Mountains" class="image-class">
+      <h4>Landscape Design</h4>
+      <p class="card-text" align="justify">Being close to nature is proven to have a healing effect on people. Adding natural landscape elements boost their mood and provide rejuvenating energy.
+
+
+</p>
+      <br>                  
+      <b>Skills and Tools</b>
+      <p> Group Casestudy and individual landscape project </p>
+      <a href="./Landscape Design.pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>     
+      </a>           
+    </div>
+  </div>
+  
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column collegework">
+    <div class="content">
+      <img src="./images/Bathroom design.jpg" alt="Mountains" class="image-class">
+      <h4>Bathroom Design</h4>
+      <p class="card-text" align="justify">A luxurious bathroom design for a beach resort in India surrounding with nature.
+
+
+</p>
+      <br>                  
+      <b>Skills and Tools</b>
+      <p> Group Casestudy and individual landscape project </p>
+      <a href="./Bathroom Design.pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>     
+      </a>           
+    </div>
+  </div>
+  
+  <div class="column machinelearning">
+    <div class="content">
+      <img src="./images/8.jpg" alt="machinelearning" class="image-class">
+      <h4> Dental Clinic </h4>
+      <p class="card-text" align="justify">Dental clinic design for Dr. Ashwini Kankaria at Govind nagar, Nashik. </p>
+	  <p class="card-text" align="justify"> Clinic name - H3 SMILES DENTAL CLINIC </p>
+        <br>                      
+        <b>Skills and Tools</b>
+        <p>Measurement, AutoCAD, Sketchup and V-ray, Site images</p>        
+        <a href="./Merged PDF .pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>      
+        </a>                 
+    </div>
+  </div>
+  
+
+
+  <div class="column deeplearning">
+    <div class="content">
+      <img src="./images/DD.jpg" alt="deeplearning" class="image-class">
+      <h4>Detail Drawings</h4>
+      <p class="card-text"  align="justify">Space planning, Furniture details, Ceiling drawings, Electrical drawings, etc. 
+        <br>
+		<br>
+        <b>Skills and Tools</b>
+     <p>  Autocad </p>
+       <a href="./Detail drawings.pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>      
+        </a> 
+    </div>
+  </div>
+
+
+  <div class="column deeplearning">
+    <div class="content">
+      <img src="./images/4.png" alt="deeplearning" class="image-class">
+      <h4>Renders</h4>
+      <p  class="card-text" align="justify">3D Model created in Sketchup and rendered in V-ray
+        <br>
+        <b>Skills and Tools</b>
+     <p>  Sketchup and V-ray</p>
+     <a href="./OR 1_merged_merged.pdf" target="_blank" style="text-decoration: none;">
+      <button class="view-btn"> View Project</button>      
+      </a>  
+    </div>
+  </div>
+  <div class="column deeplearning">
+    <div class="content">
+      <img src="./images/Civil.jpg" alt="deeplearning" class="image-class">
+      <h4>Civil drawings</h4>
+      <p  class="card-text" align="justify">Plans, Center line drawing, Slab profiles, Drawings, Elevation
+        <br>
+        <br>
+        <b>Skills and Tools</b>
+        <p>Autocad</p>    
+      <a href="./Civil Drawings.pdf" target="_blank" style="text-decoration: none;">
+        <button class="view-btn"> View Project</button>      
+        </a>      
+    </div>
+  </div>
+  <div class="column deeplearning">
+    <div class="content">
+      <img src="./images/515493914.jpg" alt="deeplearning" class="image-class">
+      <h4>Walkthrough</h4>
+      <p class="card-text"  align="justify">Mud house in Pondicherry, Tamil Nadu
+        <br>
+        <br>
+        <b>Skills and Tools</b>
+     <p>  Sketchup and Lumion</p>
+     <a href="./Walkthrough Mud House option 1.mp4" target="_blank" style="text-decoration: none;">
+      <button class="view-btn"> View Project</button>      
+      </a>  
+    </div>
+  </div>
+  <div class="column deeplearning">
+    <div class="content">
+      <img src="./images/20240221_165501.jpg" alt="deeplearning" class="image-class">
+      <h4>Office completed sites</h4>
+      <p  class="card-text" align="justify">Gym
+        <br>
+        <br>
+        <b>Skills and Tools</b>
+     <p>  MP4 document</p>
+     <a href="./Office Completed site -Gym.mp4" target="_blank" style="text-decoration: none;">
+      <button class="view-btn"> View Project</button>      
+      </a> 
+    </div>
+  </div>
+  
+  
+  
+
+
+
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("deeplearning")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+var siteWidth = 1280;
+var scale = window.outerWidth /siteWidth
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+         
+
+</script>
+</body>
+</html>
